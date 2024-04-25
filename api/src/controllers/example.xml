@@ -1,0 +1,211 @@
+TerminalID MIAT83700B
+AgentSine MIAT8370B
+__________________KIU_AirAvailRQ___________________
+_____________________One Way __________________________
+
+<?xml version="1.0" encoding="UTF-8"?> 
+<KIU_AirAvailRQ EchoToken="1" TimeStamp="2013-01-24T19:20:43+00:00" Target="Production" Version="3.0" SequenceNmbr="1" PrimaryLangID="en-us" DirectFlightsOnly="false" MaxResponses="10" CombinedItineraries="false"> 
+    <POS> 
+        <Source AgentSine="MIAT8370B" TerminalID="MIAT83700B" ISOCountry="US" /> 
+    </POS> 
+    <OriginDestinationInformation> 
+        <DepartureDateTime>2023-07-01</DepartureDateTime> 
+        <OriginLocation LocationCode="PZO" /> 
+        <DestinationLocation LocationCode="CBL" /> 
+    </OriginDestinationInformation>
+    <TravelPreferences MaxStopsQuantity=""> 
+        <CabinPref Cabin="" /> 
+    </TravelPreferences> 
+    <TravelerInfoSummary> 
+        <AirTravelerAvail> 
+            <PassengerTypeQuantity Code="ADT" Quantity="1" /> 
+        </AirTravelerAvail> 
+    </TravelerInfoSummary> 
+</KIU_AirAvailRQ>
+____________________________________________________
+__________________KIU_AirAvailRQ____________________
+_________________ ROUND TRIP ________________________
+
+<?xml version="1.0" encoding="UTF-8"?> 
+<KIU_AirAvailRQ EchoToken="1" TimeStamp="2013-01-24T19:20:43+00:00" Target="Testing" Version="3.0" SequenceNmbr="1" PrimaryLangID="en-us" DirectFlightsOnly="false" MaxResponses="10" CombinedItineraries="false"> 
+    <POS> 
+        <Source AgentSine="MIAT8370B" TerminalID="MIAT83700B" ISOCountry="US" /> 
+    </POS> 
+    <OriginDestinationInformation> 
+        <DepartureDateTime>2023-07-16</DepartureDateTime> 
+        <OriginLocation LocationCode="PZO" /> 
+        <DestinationLocation LocationCode="CCS" /> 
+    </OriginDestinationInformation>
+    <OriginDestinationInformation> 
+        <DepartureDateTime>2023-07-16</DepartureDateTime> 
+        <OriginLocation LocationCode="CCS" /> 
+        <DestinationLocation LocationCode="PZO" /> 
+    </OriginDestinationInformation>
+    <TravelPreferences MaxStopsQuantity=""> 
+        <CabinPref Cabin="" /> 
+    </TravelPreferences> 
+    <TravelerInfoSummary> 
+        <AirTravelerAvail> 
+            <PassengerTypeQuantity Code="ADT" Quantity="1" /> 
+        </AirTravelerAvail> 
+    </TravelerInfoSummary> 
+</KIU_AirAvailRQ>
+
+
+__________________KIU_AirPriceRQ____________________
+
+<?xml version="1.0" encoding="UTF-8"?> 
+<KIU_AirPriceRQ EchoToken="WS3DOCEXAMPLE" TimeStamp="2015-03-09T16:49:52+00:00" Target="Production" Version="3.0" SequenceNmbr="1" PrimaryLangID="en-us"> 
+    <POS> 
+        <Source AgentSine="MIAT8370B" TerminalID="MIAT83700B" ISOCountry="US" ISOCurrency="USD"> 
+            <RequestorID Type="5" /> 
+            <BookingChannel Type="1" /> 
+        </Source> 
+    </POS> 
+    <AirItinerary> 
+        <OriginDestinationOptions> 
+            <OriginDestinationOption> 
+                <FlightSegment DepartureDateTime="2023-07-01 06:00:00" ArrivalDateTime="2023-07-01 06:50:00" FlightNumber="307" ResBookDesigCode="B"> 
+                    <DepartureAirport LocationCode="PZO" /> 
+                    <ArrivalAirport LocationCode="CCS" /> 
+                    <MarketingAirline Code="5R" /> 
+                </FlightSegment> 
+            </OriginDestinationOption> 
+        </OriginDestinationOptions> 
+    </AirItinerary> 
+    <TravelerInfoSummary> 
+        <PriceRequestInformation> 
+            <TPA_Extension> 
+                <TourCode Type="N" Code="JUANTEST" /> 
+            </TPA_Extension> 
+        </PriceRequestInformation> 
+        <AirTravelerAvail> 
+            <PassengerTypeQuantity Code="ADT" Quantity="1" />
+            <PassengerTypeQuantity Code="INF" Quantity="1" />
+        </AirTravelerAvail> 
+    </TravelerInfoSummary> 
+</KIU_AirPriceRQ>
+_____________________________________________________________
+__________________KIU_AirPriceRQ_____________________________
+_______________RECOTIZACION DE UNA RESERVA___________________
+______________________EXISTENTE______________________________
+
+
+<?xml version="1.0" encoding="UTF-8"?> 
+<KIU_AirPriceRQ EchoToken="WS3DOCEXAMPLE" TimeStamp="2015-03-09T16:49:52+00:00" Target="Testing" Version="3.0" SequenceNmbr="1" PrimaryLangID="en-us"> 
+    <POS> 
+        <Source AgentSine="MIAT8370B" TerminalID="MIAT83700B" ISOCountry="US" ISOCurrency="USD"> 
+            <RequestorID Type="5" /> 
+            <BookingChannel Type="1" /> 
+        </Source> 
+    </POS> 
+    <BookingReferenceID ID="URBTPG" /> 
+    <TravelerInfoSummary> 
+        <PriceRequestInformation>
+        </PriceRequestInformation>
+    </TravelerInfoSummary> 
+</KIU_AirPriceRQ>
+
+_____________________________________________________________
+___________________ KIU_AirBookRQ/RS ________________________
+
+<?xml version="1.0" encoding="UTF-8"?> 
+<KIU_AirBookRQ EchoToken="1" TimeStamp="2015-03-30T19:07:51+00:00" Target="Testing" Version="3.0" SequenceNmbr="1" PrimaryLangID="en-us"> 
+    <POS> 
+        <Source AgentSine="MIAT8370B" TerminalID="MIAT83700B" PseudoCityCode="MIA" ISOCountry="US" ISOCurrency="USD"> 
+            <RequestorID Type="5" /> 
+            <BookingChannel Type="1" /> 
+        </Source> 
+    </POS> 
+    <PriceInfo> 
+        <TourCode Type="N" Text="JUANTEST" /> 
+    </PriceInfo> 
+    <AirItinerary> 
+        <OriginDestinationOptions> 
+            <OriginDestinationOption> 
+                <FlightSegment DepartureDateTime="2023-09-25 09:20:00" ArrivalDateTime="2023-09-25 10:40:00" FlightNumber="822" ResBookDesigCode="G"> 
+                    <DepartureAirport LocationCode="PZO" /> 
+                    <ArrivalAirport LocationCode="CCS" /> 
+                    <MarketingAirline Code="ES" /> 
+                </FlightSegment> 
+            </OriginDestinationOption> 
+        </OriginDestinationOptions> 
+    </AirItinerary> 
+    <TravelerInfo> 
+        <AirTraveler PassengerTypeCode="ADT" BirthDate="1994-08-02"> 
+            <PersonName> 
+                <GivenName>HUMBERTO</GivenName>  
+                <Surname>GUERRA</Surname> 
+            </PersonName> 
+            <Telephone AreaCityCode="011" PhoneNumber="123456789" /> 
+            <Address> 
+                <AddressLine>CALLE 34 N 11</AddressLine> 
+                <CityName>BUENOS AIRES</CityName> 
+                <PostalCode>C1407AXA</PostalCode> 
+                <StateProv>CAPITAL FEDERAL</StateProv> 
+                <CountryName>ARGENTINA</CountryName> 
+            </Address> 
+            <Email>JUAN@PEREZ.COM</Email> 
+            <Document DocID="123456789" DocType="NI" /> 
+            <CustoLoyalty ProgramID="XX" MembershipID="12346789" /> 
+            <TravelerRefNumber RPH="01" /> 
+        </AirTraveler> 
+        <SpecialReqDetails> 
+            <Remarks> 
+                <Remark>TEST TOURCODE</Remark> 
+            </Remarks> 
+        </SpecialReqDetails> 
+    </TravelerInfo> 
+    <Ticketing TicketTimeLimit="3" /> 
+</KIU_AirBookRQ>
+
+_______________________________________________________________
+
+________________ KIU_AirDemandTicketRQ/RS ______________________
+
+<?xml version="1.0" encoding="UTF-8"?> 
+<KIU_AirDemandTicketRQ EchoToken="1" TimeStamp="2021-06-23T14:12:57Z" Target="Production" Version="3.0" SequenceNmbr="1" PrimaryLangID="en-us"> 
+    <POS> 
+        <Source AgentSine="MIAT8370B" TerminalID="MIAT83700B" ISOCountry="US" ISOCurrency="USD"> 
+            <RequestorID Type="5" /> 
+            <BookingChannel Type="1" /> 
+        </Source> 
+    </POS> 
+    <DemandTicketDetail TourCode=""> 
+        <BookingReferenceID ID="EJKJLE"> 
+            <CompanyName Code="ES" /> 
+        </BookingReferenceID>
+        <PaymentInfo PaymentType="1" PaymentRPH="1" InvoiceCode="ACME">             
+        </PaymentInfo> 
+        <Endorsement Info="THIS TICKET IS NONREFUNDABLE" /> 
+    </DemandTicketDetail> 
+</KIU_AirDemandTicketRQ>
+
+// ERROR: 30000 
+// ERROR EN EL PROCESO DE VALIDACION - INVALID AGENCY
+// POSIBLE PARAMETRO CON ERROR "COMPANY NAME" 
+_______________________________________________________________
+
+__________________KIU_AirDemandTicketV2RQ______________________ 
+--------FUNCIONANDO>>>>> ESTE ES EL QUE VAMOS A USAR <<<<< -----
+
+<KIU_AirDemandTicketV2RQ xmlns:ns="http://www.opentravel.org/OTA/2003/05/common" xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning" xmlns:sch="http://purl.oclc.org/dsdl/schematron" xmlns:fn="http://www.w3.org/2005/xpath-functions" xmlns="http://www.opentravel.org/OTA/2003/05" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opentravel.org/OTA/2003/05" EchoToken="EXAMPLEDEMANDTICKETV2" TimeStamp="2021-12-27T13:10:00" Target="Production" Version="3.1" SequenceNmbr="1" PrimaryLangID="en-US"> 
+    <POS> 
+        <Source AgentSine="MIAT8370B" TerminalID="MIAT83700B" ISOCountry="US" ISOCurrency="USD"> 
+            <RequestorID Type="5" /> 
+            <BookingChannel Type="1" /> 
+        </Source> 
+    </POS> 
+    <DemandTicketDetail> 
+        <BookingReference ID="EJKJLE" /> 
+        <ValidatingCarrierInfo Carrier="ES"/> 
+        <PaymentInfo PaymentType="1" PaymentRPH="1" InvoiceCode="ACME"> 
+        </PaymentInfo> 
+        <FlightReference SegmentRPHNumber="1"/>
+    </DemandTicketDetail> 
+</KIU_AirDemandTicketV2RQ>
+
+// ERROR: 3130
+// AGENCY NOT AUTHORIZED - CONTACT CARRIER
+
+_________________________________________________________________
